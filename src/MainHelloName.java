@@ -1,7 +1,13 @@
+import java.util.Scanner;
+
 class UserName {
+    Scanner input = new Scanner(System.in);
 
     public String getName() {
-        String name = "Zelda";
+//        String name = "Zelda";
+        String name;
+        System.out.println("Enter name: ");
+        name = input.nextLine();
 
         return name;
     }
